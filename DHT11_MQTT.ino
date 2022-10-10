@@ -5,8 +5,8 @@
 #define DHTTYPE DHT11 //21 or 22 also an option
 
 // WiFi
-const char *ssid = "PUSBANGNIS"; // Enter your WiFi name
-const char *password = "pusbangnisuns123";  // Enter WiFi password
+const char *ssid = " "; // Enter your WiFi name
+const char *password = " ";  // Enter WiFi password
 
 // MQTT Broker
 const char *mqtt_broker = "broker.emqx.io";
