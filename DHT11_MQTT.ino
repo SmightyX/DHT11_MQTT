@@ -1,19 +1,19 @@
-#include <ESP8266WiFi.h>
+#include <ESP8266WiFi.h> //Library ESP8266
 #include <PubSubClient.h>
-#include "DHT.h"
-#define DHTPIN D5
-#define DHTTYPE DHT11 //21 or 22 also an option
+#include "DHT.h" //Library Sensor DHT11
+#define DHTPIN D5 //Pin Data Pada DHT11 ke ESP8266/ESP32
+#define DHTTYPE DHT11 //Tipe Sensor DHT
 
-// WiFi
+// Koneksi WiFi
 const char *ssid = " "; // Enter your WiFi name
 const char *password = " ";  // Enter WiFi password
 
-// MQTT Broker
-const char *mqtt_broker = "broker.emqx.io";
+// Koneksi MQTT Broker
+const char *mqtt_broker = " "; //Sesuaikan dengan MQTT Broker
 const char *topic1= "Temperature";
 const char *topic2= "Humidity";
-const char *mqtt_username = "";
-const char *mqtt_password = "";
+const char *mqtt_username = ""; // Disesuaikan dengan username pada MQTT Kalian
+const char *mqtt_password = ""; // Disesuaikan dengan password pada MQTT Kalian
 const int mqtt_port = 1883;
 
 DHT dht(DHTPIN, DHTTYPE);
